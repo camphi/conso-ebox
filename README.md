@@ -1,2 +1,2 @@
 # conso-ebox
-get my total consommation from ebox
+Recevoir sur mon cellulaire ma consommation internet ebox du mois depuis pushbullet
