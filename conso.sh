@@ -14,10 +14,10 @@ fi
 
 if [[ -z "$3" ]]
 then
-echo "missing pushbullet device identification... sending to all...";
+  echo "missing pushbullet device identification... sending to all...";
 fi
 
-exit 0;
+
 # Absolute path to this script, e.g. /home/user/bin/foo.sh
 SCRIPT=$(readlink -f "$0")
 # Absolute path this script is in, thus /home/user/bin
@@ -33,10 +33,10 @@ echo $consodata;
 
 if [[ "$consodata" =~ [0-9]{1,3}\.?[0-9]{0,2}\ G$ ]]
 then
-	echo "good"
+  echo "good"
 else
-	consodata="Consommation indisponible"
-	echo "bad"
+  consodata="Consommation indisponible"
+  echo "bad"
 fi
 
 curl --header "Access-Token: $2" \
